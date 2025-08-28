@@ -1,0 +1,84 @@
+.contact {
+  background-color: #1b1b1b;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.contact h2 span {
+  color: #00e5ff;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: auto;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2d2d2d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #00e5ff;
+  color: #1b1b1b;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #00bcd4;
+}
+
+.status-msg {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.status-msg::before {
+  content: "📩 ";
+}
+
+.status-msg.success {
+  color: #4caf50;
+}
+
+.status-msg.error {
+  color: #f44336;
+}
