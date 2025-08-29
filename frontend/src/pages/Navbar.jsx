@@ -9,14 +9,13 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <nav className="navbar">
-      <div className="logo">Nidhekshaa</div>
+      <div className="logo"><a href="#">Nidhekshaa</a></div>
 
       {isMobile ? (
         <>
           <button className="hamburger" onClick={toggleMenu}>☰</button>
           {menuOpen && (
             <ul className="mobile-menu">
-              <li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -26,7 +25,6 @@ const Navbar = () => {
         </>
       ) : (
         <ul className="nav-links">
-          <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
