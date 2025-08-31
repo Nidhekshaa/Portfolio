@@ -6,7 +6,7 @@ function Achievements() {
       id: 1,
       title: "MongoDB Associate Developer",
       issuer: "MongoDB",
-      year: 2023,
+      year: 2023 ,
       imgUrl: "../assets/MongoDBAssociateDeveloper.jpg"
     }
   ];
