@@ -1,15 +1,18 @@
 import '../styles/about.css';
-import { useEffect, useState } from "react";
 import profileImage from "../assets/nidhekshaa photo.jpg";
 
 const About = () => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/user/profile")
-      .then((res) => res.json())
-      .then((data) => setUser(data));
-  }, []);
+  const user = {
+    name:"Nidhekshaa N K",
+    dob:"March 30, 2005",
+    address:"Komarapalayam, Namakkal, Tamil Nadu, India",
+    zip:"638183",
+    email:"nknidhekshaa@gmail.com",
+    phone:"+91-88389-72605",
+    intro:"I'm Nidhekshaa N K, I’m a passionate MERN stack developer who transitioned into tech from a creative background, combining design sensibility with strong development skills. I enjoy building responsive, user-focused full-stack web applications using MongoDB, Express.js, React, and Node.js.",
+    quote:"Design is intelligence made visible. Code brings it to life.",
+    interests:["Music","Travel","Movie","Sports"]
+  }
 
   if (!user) return <p>Loading...</p>;
   return (

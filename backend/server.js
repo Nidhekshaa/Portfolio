@@ -12,11 +12,11 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.error(err));
 
-const userRoutes = require("./routes/userRoutes");
-app.use("/api/user", userRoutes);
-
 const projectRouters = require('./routes/projectRoutes');
 app.use('/api/projects',projectRouters);
+
+const CertificateRoutes = require('./routes/CertificateRoutes');
+app.use('/api/certificates',CertificateRoutes);
 
 const contactRoutes = require("./routes/Contact");
 app.use("/api/contact", contactRoutes);

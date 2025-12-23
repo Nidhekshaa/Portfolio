@@ -5,7 +5,6 @@ import Skills from "./pages/Skills.jsx";
 import Contact from "./pages/Contact.jsx";
 import Projects from "./pages/Projects.jsx";
 import Certificates from "./pages/Certificates.jsx";
-// import Achievements from "./pages/Achievements.jsx";
 import "./index.css";
 import Footer from "./pages/Footer.jsx";
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <Skills />
       <Projects />
       <Certificates />
-      {/* <Achievements /> */}
       <Contact />
       <Footer />
     </>

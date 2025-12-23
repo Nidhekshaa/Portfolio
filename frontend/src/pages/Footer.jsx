@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p className="footer-text">© 2023 Nidhekshaa Portfolio. All rights reserved.</p>
+        <p className="footer-text">© 2025 Nidhekshaa Portfolio. All rights reserved.</p>
         <div className="footer-socials">
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
             <FaTwitter />

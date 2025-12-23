@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/projects.css";
-import profileImage from "../assets/nidhekshaa photo.jpg";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
