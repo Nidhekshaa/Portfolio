@@ -5,7 +5,8 @@ const projectSchema = new mongoose.Schema({
   description: String,
   githubLink: String,
   imageUrl: String,
-  techStack: String
+  techStack: String,
+  liveLink: String
 });
 
 module.exports = mongoose.model('Project', projectSchema);
