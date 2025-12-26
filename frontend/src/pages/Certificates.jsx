@@ -9,7 +9,7 @@ const Certificates = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/certificates")
+      .get("https://portfolio-q0q9.onrender.com/api/certificates")
       .then((res) => {
         console.log("API RESPONSE 👉", res.data);
         setCertificates(res.data);
