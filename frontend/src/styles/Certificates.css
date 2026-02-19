@@ -61,3 +61,44 @@
   background-color: cyan;
   color: #0f0f0f;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .certificates-section {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .certificates-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .certificates-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .certificate-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.2rem;
+  }
+
+  .certificate-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.95rem;
+  }
+
+  .certificate-card a {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}

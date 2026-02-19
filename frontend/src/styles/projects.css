@@ -92,3 +92,29 @@
 .project-overlay a:hover {
   background-color: #00bcd4;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 1.5rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+}

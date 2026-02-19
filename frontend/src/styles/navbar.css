@@ -98,3 +98,35 @@
   color: white;
   border: none;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  /* Hide desktop links */
+  .nav-links {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Mobile dropdown menu */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+  }
+
+  .mobile-menu a {
+    padding: 0.5rem 0;
+  }
+}

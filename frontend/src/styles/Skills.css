@@ -1,5 +1,5 @@
 .skills {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   background-color: #101010;
   color: #f2f2f2;
   text-align: center;
@@ -57,3 +57,48 @@
   margin-bottom: 1rem;
 }
 
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-title::after {
+    width: 60px;
+    height: 2px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .skill-card {
+    width: 100%;
+    max-width: 350px;
+    padding: 1.2rem;
+  }
+
+  .skill-name {
+    font-size: 1.3rem;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+
+  /* Optional: Disable hover lift effect on touch devices */
+  .skill-card:hover {
+    transform: none;
+  }
+}
