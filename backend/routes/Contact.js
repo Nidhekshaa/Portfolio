@@ -6,16 +6,21 @@ router.post("/", async (req, res) => {
   const { name, email, mobile, subject, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: process.env.SMTP_HOST,
+    port: 2525,
+    secure: false,
     auth: {
-      user: "nknidhekshaa@gmail.com",
-      pass: process.env.EMAIL_PASSWORD 
-    }
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+    },
+    tls: {
+      rejectUnauthorized: false,
+    },
   });
 
   const mailOptions = {
-    from: email,
-    to: "nknidhekshaa@gmail.com",
+    from: process.env.SMTP_USER,
+    to: email,
     subject: `Portfolio Contact: ${subject}`,
     html: `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
@@ -45,7 +50,7 @@ router.post("/", async (req, res) => {
       <p style="margin-top: 30px; text-align: center; color: #999; font-size: 0.9rem;">
         Sent from Nidhekshaa's Portfolio Website 🌐
       </p>
-    </div>`
+    </div>`,
   };
 
   try {
